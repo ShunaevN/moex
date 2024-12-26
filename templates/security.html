@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href='../static/styles/security.css'>
+    <script type="module" src="{{url_for('static', filename='scripts/index.js')}}" defer></script>
+    <title>Информация по ценным бумагам</title>
+</head>
+<body>
+    <main>
+        <div class="main_block main_security_block">
+            <div class="security_container_header">
+                <p>id</p>
+                <p>secid</p>
+                <p>regnumber</p>
+                <p>name</p>
+                <p>emitent_title</p>
+            </div>
+            <!-- Тут будет template по бумаге -->
+        </div>
+    </main>
+    <template id="security_template">
+      <div class="security_template_container">
+          <p class="security_template_text security_template_id">0</p>
+          <p class="security_template_text security_template_secid">0</p>
+          <p class="security_template_text security_template_regnumber">0</p>
+          <p class="security_template_text security_template_name">0</p>
+          <p class="security_template_text security_template_emitent_title">0</p>
+      </div>
+    </template>
+</body>
+</html>

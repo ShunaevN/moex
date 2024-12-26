@@ -1,0 +1,65 @@
+.main_block {
+    margin: 20px 5px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #0066FE;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.cross_template_container {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    border: 1px solid #0066FE;
+    margin_bottom: 8px;
+    border-radius: 5px;
+    align-items: center;
+    height: 62px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.cross_template_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+    width: 150px;
+    max-height: 62px;
+    overflow: auto;
+    text-align: left;
+}
+
+.cross_container_header {
+    display: flex;
+    flex-direction: row;
+    background-color: #d99696;
+    margin_bottom: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+p {
+    width: 150px;
+}
+
+.main_block::-webkit-scrollbar {
+  width: 8px;               /* ширина scrollbar */
+}
+
+.main_block::-webkit-scrollbar-track {
+  background: #D9D9D9; /* цвет дорожки */
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.main_block::-webkit-scrollbar-thumb {
+  background-color: #9D9B9B;    /* цвет плашки */
+  border-radius: 10px;       /* закругления плашки */
+  border: none;  /* padding вокруг плашки */
+}

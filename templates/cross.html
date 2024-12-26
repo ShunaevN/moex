@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href='../static/styles/cross.css'>
+    <script type="module" src="{{url_for('static', filename='scripts/index.js')}}" defer></script>
+    <title>Сводная таблица</title>
+</head>
+<body>
+<main>
+    <div class="main_block main_cross_block">
+        <div class="cross_container_header">
+            <p>secid</p>
+            <p>regnumber</p>
+            <p>name</p>
+            <p>emitent_title</p>
+            <p>tradedate</p>
+            <p>numtrades</p>
+            <p>open</p>
+            <p>close</p>
+        </div>
+        <!-- Тут будет template по бумаге -->
+    </div>
+</main>
+    <template id="cross_template">
+      <div class="cross_template_container">
+          <p class="cross_template_text cross_template_secid">0</p>
+          <p class="cross_template_text cross_template_regnumber">0</p>
+          <p class="cross_template_text cross_template_name">0</p>
+          <p class="cross_template_text cross_template_emitent_title">0</p>
+          <p class="cross_template_text cross_template_tradedate">0</p>
+          <p class="cross_template_text cross_template_numtrade">0</p>
+          <p class="cross_template_text cross_template_open">0</p>
+          <p class="cross_template_text cross_template_close">0</p>
+      </div>
+    </template>
+</body>
+</html>
